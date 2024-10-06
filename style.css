@@ -1,0 +1,99 @@
+:root{
+--dark:#374151;
+--darker:#1f2937;
+--darkest:#1d1d1d;
+--light:#EEE;
+--pink:#Ec4899;
+--gray:#6b7280;
+--green:rgb(14, 196, 57);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--dark);
+    color: #fff;
+}
+header{
+    padding: 2rem;
+    max-width: 800px;
+    width:100%;
+    margin:15px auto;
+}
+header h1{
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+    color: var(--gray);
+}
+#new-task-form{
+    display: flex;
+}
+input,button{
+    appearance:none;
+    border: none;
+    outline:none;
+    background: none;
+}
+#taskinput{
+    flex: 1 1 0%;
+    background-color: var(--darker);
+    padding: 1 rem;
+    border-radius: .5rem;
+    margin-right: 1rem;
+    color: var(--light);
+    font-size: 1.25rem;
+}
+#taskinput ::placeholder{
+    color: var(--gray);
+}
+#tasksubmit{
+    background-color: var(--light);
+}
+main{
+    flex: 1 1 0%;
+    padding: 2rem 1 rem;
+    max-width: 800px;
+    width:100%;
+    margin: 0 auto;
+}
+.task-list{
+    padding: auto;
+}
+.task-list h2{
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+    color: var(--gray);
+}
+
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkest);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+#tasks .task .content .text{
+    color: var(--light);
+    font-size: 1.125rem;
+    width: 100%;
+    display: block;
+    transition: .4s;
+}
+#tasks .task .actions{
+    display: flex;
+    margin:0 -0.5rem;
+} 
+.task .actions button{
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    color: var(--green);
+}
